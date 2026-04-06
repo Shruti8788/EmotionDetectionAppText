@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 import numpy as np
 import re
@@ -115,7 +115,7 @@ with col2:
         plt.xlabel("Emotions")
         plt.ylabel("Probability")
         plt.title("Emotion Prediction Probability")
-=======
+
 import streamlit as st
 import numpy as np
 import re
@@ -230,5 +230,4 @@ with col2:
         plt.xlabel("Emotions")
         plt.ylabel("Probability")
         plt.title("Emotion Prediction Probability")
->>>>>>> 70cabda759dc758392ec6e0b6087c8bda17ae7ad
         st.pyplot(fig)
