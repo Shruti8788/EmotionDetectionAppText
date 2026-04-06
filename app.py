@@ -82,7 +82,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("### Enter Text")
-    user_input = st.text_area("", height=200)
+    user_input = st.text_area("Enter your text here", height=200, key="input1")
 
     if st.button("Predict Emotion"):
         emotion, prob, probs = predict_emotion(user_input)
