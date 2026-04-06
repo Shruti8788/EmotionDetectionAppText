@@ -82,10 +82,20 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("### Enter Text")
-    user_input = st.text_area("Enter your text here", height=200, key="input1")
+    
+    user_input = st.text_area(
+        "Type your sentence here",
+        height=200,
+        key="text_input"
+    )
 
-    if st.button("Predict Emotion"):
+    if st.button("Predict Emotion", key="predict_button"):
         emotion, prob, probs = predict_emotion(user_input)
+
+        st.markdown("### Prediction Result")
+        st.success(f"Emotion: {emotion}")
+        st.progress(int(prob * 100))
+        st.write(f"Confidence: {round(prob*100,2)} %")
 
         st.markdown("### Prediction Result")
         st.success(f"Emotion: {emotion}")
