@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit
 nltk
 scikit-learn
@@ -5,3 +6,12 @@ pandas
 numpy
 matplotlib
 joblib
+=======
+streamlit
+nltk
+scikit-learn
+pandas
+numpy
+matplotlib
+joblib
+>>>>>>> 70cabda759dc758392ec6e0b6087c8bda17ae7ad
